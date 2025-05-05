@@ -39,7 +39,7 @@ SELECT
     td.trip_duration,
     CASE WHEN td.trip_duration < 3 THEN 'SHORT'
         ELSE WHEN td.trip_duration < 6 THEN 'MID'
-        ELSE WHEN td.trip_category >= 6 THEN 'LONG'
+        ELSE 'LONG'
         END AS trip_category,
     od.max_price,
     od.min_price,

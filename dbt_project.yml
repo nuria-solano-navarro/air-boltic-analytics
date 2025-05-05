@@ -1,1 +1,11 @@
+name: 'air_boltic_analytics'
+version: '2.0'
+profile: 'default'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  air_boltic_analytics:
+    +materialized: view
 

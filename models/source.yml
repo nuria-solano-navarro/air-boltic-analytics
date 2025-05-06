@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: trip
+        description: "Raw table containing trip records"
+        columns:
+          - name: trip_id
+            description: "Unique identifier for each trip"
+          - name: origin_city
+          - name: dest_city
+          - name: airplane_id
+          - name: start_timestamp
+          - name: end_timestamp
+
+      - name: order
+        description: "Raw table containing order records"
+        columns:
+          - name: order_id
+            description: "Unique identifier for each order"
+          - name: customer_id
+          - name: trip_id
+          - name: price_in_eur
+          - name: seat_no
+          - name: status
+
+      - name: customer
+        description: "Raw table containing the information for the customers"
+        columns:
+          - name: customer_id
+            description: "Unique identifier for each customer"
+          - name: name
+          - name: customer_group
+          - name: email
+          - name: phone_no
+
+      - name: customer_group
+        description: "Raw table containing the information for the customer group"
+        columns:
+          - name: customer_group_id
+            description: "Unique identifier for each customer group"
+          - name: type
+          - name: name
+          - name: registry_no
+
+      - name: aeroplane
+        description: "Raw table containing the information for the aeroplanes"
+        columns:
+          - name: airplane_id
+            description: "Unique identifier for each airplane"
+          - name: airplane_model
+          - name: manufacturer

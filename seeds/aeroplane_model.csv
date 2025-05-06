@@ -1,0 +1,4 @@
+Aeroplane_model_id, max_seats, max_weight, max_distance, engine_type
+"737-800”, 189, 79015, 2935, "CFM56-7B”
+"777-300ER”, 369, 351535, 7930, "GE90-115B”
+"787-9”, 296, 254000, 7635, "GEnx-1B"

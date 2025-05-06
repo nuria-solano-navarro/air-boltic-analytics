@@ -6,6 +6,7 @@ model-paths: ["models"]
 seed-paths: ["seeds"]
 
 models:
-  air_boltic_analytics:
+  marts:
     +materialized: view
-
+  staging:
+    +materialized: view
